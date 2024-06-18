@@ -17,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`${inter.className} mx-auto w-max h-20 bg-black`} />
+        <nav className="mx-max border-b-[1px] rounded-lg">
+          <div className={`${inter.className} mx-auto w-5/6 h-20 `} />
+        </nav>
         {children}
       </body>
     </html>
