@@ -60,5 +60,5 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ['.eslintrc.cjs', 'commitlint.config.js'],
+  ignorePatterns: ['.eslintrc.cjs', 'commitlint.config.js', 'postcss.config.mjs'],
 };
