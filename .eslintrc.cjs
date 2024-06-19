@@ -4,13 +4,10 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
     'airbnb',
     'airbnb/hooks',
-    'airbnb-typescript',
-    'prettier',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -18,47 +15,38 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    project: './tsconfig.json',
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
-    'react/require-default-props': 'off',
-    '@typescript-eslint/no-use-before-define': 'off',
-    'prettier/prettier': ['error', { endOfLine: 'auto' }],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'no-console': 'off',
-    'no-param-reassign': [
-      'error',
-      {
-        props: true,
-        ignorePropertyModificationsFor: ['state', 'acc', 'e'],
-      },
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
     'import/extensions': [
       'error',
       'ignorePackages',
       {
-        ts: 'never',
-        tsx: 'never',
         js: 'never',
         jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
       },
     ],
-    'react/react-in-jsx-scope': 'off',  
+    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
-    'react/require-default-props': 'off'
+    'react/require-default-props': 'off',
   },
   settings: {
-    react: {
-      version: 'detect',
-    },
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
+      alias: {
+        map: [['@', './src']],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
     },
   },
-  ignorePatterns: ['.eslintrc.cjs', 'commitlint.config.js', 'postcss.config.mjs'],
 };
