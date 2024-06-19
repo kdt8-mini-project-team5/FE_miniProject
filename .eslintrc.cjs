@@ -46,9 +46,9 @@ module.exports = {
         jsx: 'never',
       },
     ],
-    'react/react-in-jsx-scope': 'off',  
+    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
-    'react/require-default-props': 'off'
+    'react/require-default-props': 'off',
   },
   settings: {
     react: {
@@ -57,6 +57,10 @@ module.exports = {
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+      typescript: {
+        alwaysTryTypes: true,
+        project: './tsconfig.json',
       },
     },
   },
