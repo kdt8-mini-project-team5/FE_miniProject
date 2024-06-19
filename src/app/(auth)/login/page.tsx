@@ -3,6 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import Image from 'next/image';
+import Link from 'next/link';
 import loginSchema from '../../../components/Login/loginSchema';
 import LoginInputBox from '../../../components/Login/LoginInputBox';
 
@@ -50,15 +51,15 @@ function Login() {
             >
               로그인
             </button>
-            <button
-              type="button"
-              onClick={handleSubmit((e) => {
-                console.log(e);
-              })}
-              className="bg-white text-primary text-2xl rounded-xl h-16 border-primary border-2"
-            >
-              이메일로 회원가입
-            </button>
+            <Link href="/signup">
+              <button
+                type="button"
+                className="bg-white text-primary text-2xl rounded-xl h-16 border-primary border-2
+                w-full"
+              >
+                이메일로 회원가입
+              </button>
+            </Link>
           </div>
         </form>
       </div>
