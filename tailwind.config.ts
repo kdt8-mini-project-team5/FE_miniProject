@@ -6,7 +6,11 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
+    width: {
+      innerWidth: '67.71vw',
+    },
     colors: {
       primary: '#FB1C49',
       concrete: '#F2F2F2',
