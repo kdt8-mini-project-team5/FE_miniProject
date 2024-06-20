@@ -34,6 +34,12 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: ['src/mocks/**'],
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     'react/require-default-props': 'off',
@@ -43,10 +49,11 @@ module.exports = {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
-      alias: {
-        map: [['@', './src']],
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      typescript: {
+        alwaysTryTypes: true,
+        project: './tsconfig.json',
       },
     },
   },
+  ignorePatterns: ['.eslintrc.cjs', 'commitlint.config.js'],
 };
