@@ -1,0 +1,404 @@
+{
+  "accommodations": [
+    {
+      "id": 1,
+      "title": "만산고을펜션(구 만산수목원펜션)",
+      "category": "관광호텔",
+      "minPrice": 146243,
+      "region": "강원특별자치도 화천군 상서면 만산동로 898-16",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/92/588892_image2_1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "위너스모텔",
+      "category": "콘도미니엄",
+      "minPrice": 92795,
+      "region": "강원특별자치도 속초시 먹거리2길 33",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/92/588892_image2_1.jpg"
+    },
+    {
+      "id": 3,
+      "title": "광림모텔",
+      "category": "모텔",
+      "minPrice": 80034,
+      "region": "강원특별자치도 속초시 청대로 2",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/72/588472_image2_1.jpg"
+    },
+    {
+      "id": 4,
+      "title": "대궐파크",
+      "category": "펜션",
+      "minPrice": 325319,
+      "region": "강원특별자치도 속초시 부월1길 38",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/13/2529813_image2_1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "미라지모텔",
+      "category": "민박",
+      "minPrice": 348363,
+      "region": "강원특별자치도 속초시 동해대로 4164(조양동)",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/39/632339_image2_1.jpg"
+    },
+    {
+      "id": 6,
+      "title": "그린모텔",
+      "category": "관광호텔",
+      "minPrice": 270546,
+      "region": "강원특별자치도 철원군 동송읍 창동로 2405",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/92/597292_image2_1.jpg"
+    },
+    {
+      "id": 7,
+      "title": "제주 금강산콘도",
+      "category": "콘도미니엄",
+      "minPrice": 153090,
+      "region": "제주특별자치도 제주시 한림읍 협재로 210-18",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/80/1843180_image2_1.jpg"
+    },
+    {
+      "id": 8,
+      "title": "하늘마루 펜션",
+      "category": "모텔",
+      "minPrice": 307837,
+      "region": "강원특별자치도 철원군 동송읍 창동로 2395",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/12/1843212_image2_1.jpg"
+    },
+    {
+      "id": 9,
+      "title": "산골나그네 펜션",
+      "category": "펜션",
+      "minPrice": 285868,
+      "region": "강원특별자치도 양구군 방산면 남밭길150번길 69",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/62/1843162_image2_1.jpg"
+    },
+    {
+      "id": 10,
+      "title": "초록바다펜션",
+      "category": "민박",
+      "minPrice": 323113,
+      "region": "강원특별자치도 양양군 강현면 장산3길 56-4",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/27/1950827_image2_1.jpg"
+    },
+    {
+      "id": 11,
+      "title": "샬레리조트",
+      "category": "관광호텔",
+      "minPrice": 134118,
+      "region": "강원특별자치도 평창군 봉평면 면온리 726-44",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/32/597632_image2_1.jpg"
+    },
+    {
+      "id": 12,
+      "title": "한화리조트 평창",
+      "category": "콘도미니엄",
+      "minPrice": 106665,
+      "region": "강원특별자치도 평창군 봉평면 태기로 228-33",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/26/1949026_image2_1.jpg"
+    },
+    {
+      "id": 13,
+      "title": "스타호텔",
+      "category": "모텔",
+      "minPrice": 376798,
+      "region": "강원특별자치도 정선군 사북읍 사북1길 27",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/09/2708609_image2_1.jpg"
+    },
+    {
+      "id": 14,
+      "title": "올리브뷰띠끄",
+      "category": "펜션",
+      "minPrice": 55110,
+      "region": "강원특별자치도 평창군 대관령면 눈마을길 39",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/67/1581267_image2_1.jpg"
+    },
+    {
+      "id": 15,
+      "title": "포시즌비치호텔",
+      "category": "민박",
+      "minPrice": 106032,
+      "region": "강원특별자치도 강릉시 해안로 615",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/11/2046911_image2_1.jpg"
+    },
+    {
+      "id": 16,
+      "title": "흙과소나무",
+      "category": "관광호텔",
+      "minPrice": 218551,
+      "region": "강원특별자치도 정선군 남면 자뭇골길 137-12",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/38/2383438_image2_1.jpg"
+    },
+    {
+      "id": 17,
+      "title": "코코펜션(구 백가지 나무이야기)",
+      "category": "콘도미니엄",
+      "minPrice": 338776,
+      "region": "강원특별자치도 정선군 사북읍 소금강로 3576",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/19/1949319_image2_1.jpg"
+    },
+    {
+      "id": 18,
+      "title": "갤럭시 모텔",
+      "category": "모텔",
+      "minPrice": 223045,
+      "region": "강원특별자치도 정선군 사북읍 소금강로 3489",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/73/3071573_image2_1.jpg"
+    },
+    {
+      "id": 19,
+      "title": "씨젠콘도텔",
+      "category": "펜션",
+      "minPrice": 85124,
+      "region": "강원특별자치도 양양군 강현면 동해대로 3066-7",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/47/1336747_image2_1.jpg"
+    },
+    {
+      "id": 20,
+      "title": "드래곤밸리 호텔",
+      "category": "민박",
+      "minPrice": 229639,
+      "region": "강원특별자치도 평창군 대관령면 올림픽로 715",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/92/588892_image2_1.jpg"
+    },
+    {
+      "id": 21,
+      "title": "롯데시티호텔 제주",
+      "category": "관광호텔",
+      "minPrice": 391905,
+      "region": "제주특별자치도 제주시 도령로 83",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/72/588472_image2_1.jpg"
+    },
+    {
+      "id": 22,
+      "title": "가을동화펜션",
+      "category": "콘도미니엄",
+      "minPrice": 289227,
+      "region": "강원특별자치도 평창군 봉평면 흥정계곡길 72",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/13/2529813_image2_1.jpg"
+    },
+    {
+      "id": 23,
+      "title": "씨마크호텔",
+      "category": "모텔",
+      "minPrice": 260252,
+      "region": "강원특별자치도 강릉시 해안로406번길 2",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/39/632339_image2_1.jpg"
+    },
+    {
+      "id": 24,
+      "title": "아이원리조트",
+      "category": "펜션",
+      "minPrice": 319574,
+      "region": "강원특별자치도 평창군 대관령면 솔봉로 471",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/92/597292_image2_1.jpg"
+    },
+    {
+      "id": 25,
+      "title": "엔젤드림펜션",
+      "category": "민박",
+      "minPrice": 387306,
+      "region": "강원특별자치도 평창군 봉평면 봉평북로 250-43",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/80/1843180_image2_1.jpg"
+    },
+    {
+      "id": 26,
+      "title": "설악힐호텔",
+      "category": "관광호텔",
+      "minPrice": 164546,
+      "region": "강원특별자치도 속초시 관광로 403",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/12/1843212_image2_1.jpg"
+    },
+    {
+      "id": 27,
+      "title": "호암산장",
+      "category": "콘도미니엄",
+      "minPrice": 165695,
+      "region": "강원특별자치도 원주시 문막읍 석지1길 322",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/62/1843162_image2_1.jpg"
+    },
+    {
+      "id": 28,
+      "title": "더위크앤리조트 (THE WEEK & RESORT)",
+      "category": "모텔",
+      "minPrice": 219413,
+      "region": "인천광역시 중구 용유서로 379",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/27/1950827_image2_1.jpg"
+    },
+    {
+      "id": 29,
+      "title": "펜션 리운산장",
+      "category": "펜션",
+      "minPrice": 273409,
+      "region": "강원특별자치도 평창군 봉평면 버들개1길 89-17",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/32/597632_image2_1.jpg"
+    },
+    {
+      "id": 30,
+      "title": "마이그린 펜션",
+      "category": "민박",
+      "minPrice": 271778,
+      "region": "강원특별자치도 철원군 갈말읍 두루미로 245-36",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/26/1949026_image2_1.jpg"
+    },
+    {
+      "id": 31,
+      "title": "별이든 샘 펜션",
+      "category": "관광호텔",
+      "minPrice": 322962,
+      "region": "강원특별자치도 철원군 동송읍 창동로 2297",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/09/2708609_image2_1.jpg"
+    },
+    {
+      "id": 32,
+      "title": "한탄강 디퍼펜션",
+      "category": "콘도미니엄",
+      "minPrice": 278474,
+      "region": "강원특별자치도 철원군 동송읍 태봉대교길 140-1",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/67/1581267_image2_1.jpg"
+    },
+    {
+      "id": 33,
+      "title": "가리왕산이야기 펜션",
+      "category": "모텔",
+      "minPrice": 358149,
+      "region": "강원특별자치도 정선군 정선읍 청량길 32",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/11/2046911_image2_1.jpg"
+    },
+    {
+      "id": 34,
+      "title": "강릉시 청소년 해양수련원",
+      "category": "펜션",
+      "minPrice": 222624,
+      "region": "강원특별자치도 강릉시 주문진읍 동해대로 4940(주문진읍)",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/38/2383438_image2_1.jpg"
+    },
+    {
+      "id": 35,
+      "title": "시나브로 모텔",
+      "category": "민박",
+      "minPrice": 272183,
+      "region": "강원특별자치도 속초시 엑스포로 13",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/19/1949319_image2_1.jpg"
+    },
+    {
+      "id": 36,
+      "title": "에이스모텔",
+      "category": "관광호텔",
+      "minPrice": 363659,
+      "region": "강원특별자치도 속초시 중앙로 445",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/73/3071573_image2_1.jpg"
+    },
+    {
+      "id": 37,
+      "title": "해맞이모텔",
+      "category": "콘도미니엄",
+      "minPrice": 380001,
+      "region": "강원특별자치도 속초시 영금정로 34",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/47/1336747_image2_1.jpg"
+    },
+    {
+      "id": 38,
+      "title": "송이모텔",
+      "category": "모텔",
+      "minPrice": 294420,
+      "region": "강원특별자치도 양양군 강현면 일출로 34",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/47/1336747_image2_1.jpg"
+    },
+    {
+      "id": 39,
+      "title": "리젠트모텔",
+      "category": "펜션",
+      "minPrice": 124423,
+      "region": "강원특별자치도 춘천시 공지로461번길 14(근화동)",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/92/588892_image2_1.jpg"
+    },
+    {
+      "id": 40,
+      "title": "큐모텔",
+      "category": "민박",
+      "minPrice": 186194,
+      "region": "강원특별자치도 춘천시 춘천로186번길 10",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/72/588472_image2_1.jpg"
+    },
+    {
+      "id": 41,
+      "title": "테마모텔",
+      "category": "관광호텔",
+      "minPrice": 75682,
+      "region": "강원특별자치도 춘천시 방송길36번길 73-10(근화동)",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/13/2529813_image2_1.jpg"
+    },
+    {
+      "id": 42,
+      "title": "양덕드림빌 펜션",
+      "category": "콘도미니엄",
+      "minPrice": 326695,
+      "region": "강원특별자치도 홍천군 남면 화전들길 59-29",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/39/632339_image2_1.jpg"
+    },
+    {
+      "id": 43,
+      "title": "모비딕 모텔",
+      "category": "모텔",
+      "minPrice": 314601,
+      "region": "강원특별자치도 양양군 현남면 남애안길 22",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/92/597292_image2_1.jpg"
+    },
+    {
+      "id": 44,
+      "title": "달빛마을",
+      "category": "펜션",
+      "minPrice": 69841,
+      "region": "강원특별자치도 정선군 사북읍 말고개길 90-11",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/80/1843180_image2_1.jpg"
+    },
+    {
+      "id": 45,
+      "title": "쏠비치 호텔&리조트 양양",
+      "category": "민박",
+      "minPrice": 353829,
+      "region": "강원특별자치도 양양군 손양면 선사유적로 678",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/12/1843212_image2_1.jpg"
+    },
+    {
+      "id": 46,
+      "title": "물소리바람소리펜션",
+      "category": "관광호텔",
+      "minPrice": 306753,
+      "region": "강원특별자치도 정선군 북평면 오대천로 412",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/62/1843162_image2_1.jpg"
+    },
+    {
+      "id": 47,
+      "title": "남해펜션타운",
+      "category": "콘도미니엄",
+      "minPrice": 104154,
+      "region": "경상남도 남해군 이동면 남해대로1745번길 83",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/27/1950827_image2_1.jpg"
+    },
+    {
+      "id": 48,
+      "title": "디오션리조트",
+      "category": "모텔",
+      "minPrice": 174966,
+      "region": "전라남도 여수시 소호로 295",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/32/597632_image2_1.jpg"
+    },
+    {
+      "id": 49,
+      "title": "경포우성펜션",
+      "category": "펜션",
+      "minPrice": 238819,
+      "region": "강원특별자치도 강릉시 경포로463번안길 9-3",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/26/1949026_image2_1.jpg"
+    },
+    {
+      "id": 50,
+      "title": "이비스 앰배서더 수원",
+      "category": "민박",
+      "minPrice": 97817,
+      "region": "경기도 수원시 팔달구 권광로 132",
+      "thumbnailUrl": "http://tong.visitkorea.or.kr/cms/resource/09/2708609_image2_1.jpg"
+    }
+  ]
+}

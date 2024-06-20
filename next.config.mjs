@@ -24,6 +24,26 @@ const nextConfig = {
     }
     return newConfig;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.pixabay.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'yaimg.yanolja.com',
+      },
+      {
+        protocol: 'http',
+        hostname: 'tong.visitkorea.or.kr',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

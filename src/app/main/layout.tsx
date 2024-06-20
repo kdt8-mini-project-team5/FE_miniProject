@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '../globals.css';
+import Header from '../../components/Haeder';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,8 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <nav className="mx-max border-b-[1px] rounded-lg">
-          <div className={`${inter.className} mx-auto w-innerWidth h-20 `} />
+        <nav className="mx-auto border-b-[1px] rounded-lg h-20">
+          <div
+            className={`${inter.className} mx-auto w-innerWidth h-full flex items-center`}
+          >
+            <Header />
+          </div>
         </nav>
         {children}
       </body>
