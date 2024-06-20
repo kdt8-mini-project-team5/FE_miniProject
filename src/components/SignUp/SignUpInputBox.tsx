@@ -1,12 +1,18 @@
 import { UseFormRegisterReturn } from 'react-hook-form';
 
-interface ISignUp {
-  readonly type: string;
-  readonly message?: string;
-  readonly register: UseFormRegisterReturn;
+interface ISignUpInputBox {
+  type: string;
+  message?: string;
+  register: UseFormRegisterReturn;
+  onKeyPress?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 }
 
-function SignUpInputBox({ type, message, register }: ISignUp) {
+function SignUpInputBox({
+  type,
+  message,
+  register,
+  onKeyPress,
+}: ISignUpInputBox) {
   const { onChange, onBlur, name, ref } = register || {};
   return (
     <div className="flex flex-col relative">
@@ -18,23 +24,18 @@ function SignUpInputBox({ type, message, register }: ISignUp) {
         onBlur={onBlur}
         name={name}
         ref={ref}
-        className={`${message ? 'border-primary' : null} 
+        onKeyPress={onKeyPress}
+        className={`${message ? 'border-primary' : ''} 
         border-2 
         border-white
         border-b-alto text-2xl p-2 placeholder:text-alto
         focus:outline-none
         focus:border-b-black
         flex-shrink
-        w-full
-        `}
+        w-full`}
       />
       {message && (
-        <span
-          className="absolute 
-      -bottom-6 text-primary"
-        >
-          {message}
-        </span>
+        <span className="absolute -bottom-6 text-primary">{message}</span>
       )}
     </div>
   );
