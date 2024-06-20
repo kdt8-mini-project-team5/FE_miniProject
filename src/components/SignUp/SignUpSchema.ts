@@ -26,8 +26,8 @@ const SignUpSchema = z
     name: z.string().regex(NAME_REGEX, NAME_REGEX_ERROR),
     phoneNumber: z
       .string()
-      .length(PHONE_NUMBER_LENGTH, PHONE_NUMBER_ERROR)
-      .regex(PHONE_NUMBER_REGEX, PHONE_NUMBER_REGEX_ERROR),
+      .regex(PHONE_NUMBER_REGEX, PHONE_NUMBER_REGEX_ERROR)
+      .length(PHONE_NUMBER_LENGTH, PHONE_NUMBER_ERROR),
     email: z
       .string()
       .email({ message: '유효한 메일이 아닙니다.' })
@@ -40,7 +40,7 @@ const SignUpSchema = z
       .max(MAX_PASSWORD_LEGNTH, MAX_PASSWORD_LEGNTH_ERROR)
       .regex(PASSWORD_REGEX, PASSWORD_REGEX_ERROR),
     confirmPassword: z.string(),
-    verificationCode: z
+    accessKey: z
       .string({ message: '코드를 입력해주세요.' })
       .length(VERIFICATION_CODE_LENGTH, VERIFICATION_CODE_LENGTH_ERROR),
   })
