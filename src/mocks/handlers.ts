@@ -10,6 +10,40 @@ const handlers = [
       lastName: 'Maverick',
     });
   }),
+  http.get('http://localhost/api/accommodation', () => {
+    return HttpResponse.json({
+      longtitude: 37.579617,
+      latitude: 126.977041,
+      title: '숙소 제목',
+      info: '숙소 설명',
+      price: 10000,
+      checkIn: '10:00',
+      checkOut: '14:00',
+      shower: true,
+      aircone: true,
+      tv: true,
+      pc: true,
+      internet: true,
+      refrigerator: true,
+      toiletries: true,
+      kitchenware: true,
+      parkingLodging: true,
+      address: '경기도 의정부시 호원동',
+      tel: '010-1234-1234',
+      dryer: true,
+      roomCount: 2,
+      img: ['https://', 'https://'],
+      room: [
+        {
+          title: '객실 이름',
+          price: 12000,
+          minPeople: 2, // 기준인원
+          maxPeople: 6,
+          img: ['https://', 'https://'],
+        },
+      ],
+    });
+  }),
   http.get('api/accommodations', ({ request }) => {
     const url = new URL(request.url);
     const cursorId = Number(url.searchParams.get('cursorId')) || 0;

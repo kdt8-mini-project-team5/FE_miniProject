@@ -11,7 +11,7 @@ function MswComponent({ children }: { children: React.ReactNode }) {
       if (process.env.NODE_ENV === 'development' && !isWorkerStarted.current) {
         (async () => {
           const { worker } = await import('@/mocks/browser');
-          await worker.start();
+          // await worker.start();
           console.log('Worker started');
           setIsMocking(true);
         })();
