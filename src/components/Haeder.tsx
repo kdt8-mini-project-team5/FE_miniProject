@@ -27,7 +27,7 @@ const Haeder = () => {
         >
           예약내역
         </Link>
-        <Link href="/" className="text-lg">
+        <Link href="/cart" className="text-lg">
           <MdOutlineShoppingCart size={30} />
         </Link>
         <Link
