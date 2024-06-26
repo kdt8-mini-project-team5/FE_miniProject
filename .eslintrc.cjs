@@ -24,6 +24,10 @@ module.exports = {
       1,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
+    'react/function-component-definition': [
+      2,
+      { namedComponents: ['arrow-function', 'function-declaration'] },
+    ],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -55,5 +59,9 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ['.eslintrc.cjs', 'commitlint.config.js'],
+  ignorePatterns: [
+    '.eslintrc.cjs',
+    'commitlint.config.js',
+    'postcss.config.mjs',
+  ],
 };
