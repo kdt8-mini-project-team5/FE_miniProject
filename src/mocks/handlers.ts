@@ -1,5 +1,6 @@
 import { http, HttpResponse } from 'msw';
 // import accommodationsData from '../../public/api/mainmockdata.json';
+import bookingData from './bookingData';
 
 const handlers = [
   http.get('api/user', () => {
@@ -129,6 +130,18 @@ const handlers = [
       ],
     });
   }),
-];
+  http.get('api/booking', ({ request }) => {
+    const url = new URL(request.url);
+    const page = url.searchParams.get('page');
+    const size = url.searchParams.get('size');
 
+    const start = (Number(page) - 1) * Number(size);
+    const end = start + Number(size);
+
+    return HttpResponse.json({
+      bookingList: bookingData.bookingList.slice(start, end),
+      totalElements: bookingData.totalElements,
+    });
+  }),
+];
 export default handlers;

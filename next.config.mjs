@@ -26,6 +26,7 @@ const nextConfig = {
   },
   images: {
     remotePatterns: [
+      { protocol: 'https', hostname: 'picsum.photos' },
       {
         protocol: 'https',
         hostname: 'encrypted-tbn0.gstatic.com',

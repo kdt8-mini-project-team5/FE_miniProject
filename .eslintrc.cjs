@@ -47,6 +47,8 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     'react/require-default-props': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/prop-types': 'off',
   },
   settings: {
     'import/resolver': {

@@ -22,8 +22,8 @@ const Haeder = () => {
           메인페이지
         </Link>
         <Link
-          href="/reservation"
-          className={`text-lg ${pathname === '/reservation' ? 'text-primary' : ''}`}
+          href="/bookingList"
+          className={`text-lg ${pathname === '/bookingList' ? 'text-primary' : ''}`}
         >
           예약내역
         </Link>
