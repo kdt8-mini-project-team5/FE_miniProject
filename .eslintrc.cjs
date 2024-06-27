@@ -18,7 +18,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'jsx-a11y'],
   rules: {
     'react/jsx-filename-extension': [
       1,
@@ -49,6 +49,14 @@ module.exports = {
     'react/require-default-props': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
+    'jsx-a11y/label-has-associated-control': [
+      'error',
+      {
+        controlComponents: ['Input'],
+        assert: 'either',
+        depth: 3,
+      },
+    ],
   },
   settings: {
     'import/resolver': {
