@@ -1,9 +1,9 @@
 'use client';
 
-import '../globals.css';
 import { useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Header from '../../components/Haeder';
+import '../globals.css';
 
 export default function RootLayout({
   children,

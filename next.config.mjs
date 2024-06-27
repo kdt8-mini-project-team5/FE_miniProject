@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ['tong.visitkorea.or.kr'],
+  },
   webpack: (config, { isServer }) => {
     const newConfig = {
       ...config,

@@ -25,3 +25,14 @@
   border-radius: 50%;
   background-color: #fb1c49;
 }
+@layer utilities {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input {
+    outline: none;
+  }
+
+}

@@ -10,6 +10,78 @@ const handlers = [
       lastName: 'Maverick',
     });
   }),
+  http.get('api/accommodation', () => {
+    return HttpResponse.json({
+      longitude: 127.873875062367,
+      latitude: 37.6836403222276,
+      title: '봄동물병원 게스트하우스',
+      info: '봄동물병원 게스트하우스 : 도심 속 휴식처로 최고입니다.',
+      price: 50000,
+      checkIn: '18:00',
+      checkOut: '11:00',
+      shower: true,
+      aircone: false,
+      tv: true,
+      pc: true,
+      internet: false,
+      refrigerator: false,
+      toiletries: false,
+      kitchenware: false,
+      parkingLodging: true,
+      address: '강원특별자치도 홍천군 홍천읍 무궁화로 44',
+      tel: '061-577-2052',
+      dryer: false,
+      roomCount: 3,
+      img: [
+        'http://tong.visitkorea.or.kr/cms/resource/37/2705937_image3_1.jpg',
+        'http://tong.visitkorea.or.kr/cms/resource/96/2707596_image2_1.jpg',
+      ],
+      room: [
+        {
+          title: '밝은',
+          price: 80000,
+          minPeople: 2,
+          maxPeople: 5,
+          img: [
+            'http://tong.visitkorea.or.kr/cms/resource/87/1950787_image3_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/13/710413_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/68/1950868_image3_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/87/1950787_image3_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/13/710413_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/68/1950868_image3_1.jpg',
+          ],
+        },
+        {
+          title: '별빛',
+          price: 110000,
+          minPeople: 2,
+          maxPeople: 8,
+          img: [
+            'http://tong.visitkorea.or.kr/cms/resource/08/1972208_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/85/1975985_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/23/2016923_image2_1.JPG',
+            'http://tong.visitkorea.or.kr/cms/resource/08/1972208_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/85/1975985_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/23/2016923_image2_1.JPG',
+          ],
+        },
+        {
+          title: '달빛',
+          price: 50000,
+          minPeople: 2,
+          maxPeople: 8,
+          img: [
+            'http://tong.visitkorea.or.kr/cms/resource/34/3070734_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/94/2949194_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/20/2948920_image3_1.JPG',
+            'http://tong.visitkorea.or.kr/cms/resource/34/3070734_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/94/2949194_image2_1.jpg',
+            'http://tong.visitkorea.or.kr/cms/resource/20/2948920_image3_1.JPG',
+          ],
+        },
+      ],
+    });
+  }),
   http.get('api/accommodations', ({ request }) => {
     const url = new URL(request.url);
     const cursorId = Number(url.searchParams.get('cursorId')) || 0;
