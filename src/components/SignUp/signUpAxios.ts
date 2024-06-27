@@ -6,21 +6,37 @@ const BASE_URL = 'https://test.quickbank.co.kr:8443';
 const requireAccessKey = (email: string) => {
   const accessKeyURL = `${BASE_URL}/api/register/email`;
   const dataToJson = JSON.stringify({ email });
-  axios.post(accessKeyURL, dataToJson, {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+  try {
+    axios.post(accessKeyURL, dataToJson, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    return null;
+  } catch (err) {
+    if (axios.isAxiosError(err) && err.response) {
+      return err.response.data.message;
+    }
+    return 'An Known requireAccessKey Error';
+  }
 };
 
 const checkAccessKey = (email: string, accessKey: string) => {
   const dataToJson = JSON.stringify({ email, accessKey });
   const checkAccessKeyURL = `${BASE_URL}/api/register/email/successKey`;
-  axios.post(checkAccessKeyURL, dataToJson, {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+  try {
+    axios.post(checkAccessKeyURL, dataToJson, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    return null;
+  } catch (err) {
+    if (axios.isAxiosError(err) && err.response) {
+      return err.response.data.message;
+    }
+    return 'An Known checkAccessKey Error';
+  }
 };
 
 const signUp = (data: ISignUp) => {
@@ -31,11 +47,19 @@ const signUp = (data: ISignUp) => {
     name: data.name,
     accessKey: data.accessKey,
   });
-  axios.post(registerURL, dataToJson, {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+  try {
+    axios.post(registerURL, dataToJson, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    return null;
+  } catch (err) {
+    if (axios.isAxiosError(err) && err.response) {
+      return err.response.data.message;
+    }
+    return 'An Known signUp Error';
+  }
 };
 
 export { requireAccessKey, checkAccessKey, signUp };

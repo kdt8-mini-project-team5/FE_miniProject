@@ -27,6 +27,7 @@ function SignUp() {
     handleSubmit,
     trigger,
     watch,
+    setError,
     formState: { errors },
   } = useForm<ISignUp>({
     resolver: zodResolver(SignUpSchema),
@@ -40,18 +41,20 @@ function SignUp() {
   const confirmPasswordRef = useRef<HTMLInputElement>(null);
 
   const clickAccessKeyRequireButton = async () => {
-    const result = await trigger('email');
-    if (result) {
+    const errorMessage = await requireAccessKey(watch('email'));
+    if (errorMessage) {
+      setError('email', { type: 'custom', message: errorMessage });
+    } else {
       setIsClicked(true);
-      requireAccessKey(watch('email'));
       accessKeyRef.current?.focus();
     }
   };
 
   const clickAccessKeyCheckButton = async () => {
-    const isValid = await trigger('accessKey');
-    if (isValid) {
-      checkAccessKey(watch('email'), watch('accessKey'));
+    const errorMessage = checkAccessKey(watch('accessKey'), watch('accessKey'));
+    if (errorMessage) {
+      setError('accessKey', { type: 'custom', message: errorMessage });
+    } else {
       phoneNumberRef.current?.focus();
     }
   };
