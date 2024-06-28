@@ -71,7 +71,7 @@ function AccommodationDetail({ params }: { params: { id: string } }) {
   return (
     <section className="w-innerWidth mx-auto">
       <div className="w-innerWidth flex gap-3 my-3">
-        <div className="w-3/5 h-[400px]">
+        <div className="w-[40vw] h-[400px]">
           <ImageSlider imgArr={data?.img} />
         </div>
         {data && <Kakaomap data={data} />}
@@ -117,6 +117,8 @@ function AccommodationDetail({ params }: { params: { id: string } }) {
         {data?.room.map((room) => (
           <Room
             buildingName={data?.title}
+            checkInTime={data?.checkIn}
+            checkOutTime={data?.checkOut}
             room={room}
             roomId={params.id}
             checkInDate={checkInDate}

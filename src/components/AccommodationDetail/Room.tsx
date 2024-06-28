@@ -7,9 +7,11 @@ interface RoomProps {
   buildingName: string;
   room: IRoom;
   roomId: string;
+  numPeople: string;
+  checkInTime: string;
+  checkOutTime: string;
   checkInDate: string;
   checkOutDate: string;
-  numPeople: string;
 }
 
 function Room({
@@ -19,6 +21,8 @@ function Room({
   checkInDate,
   checkOutDate,
   numPeople,
+  checkInTime,
+  checkOutTime,
 }: RoomProps) {
   return (
     <div className="flex py-4 border-dovegray border-b-2 ">
@@ -42,7 +46,7 @@ function Room({
             <MdOutlineShoppingCart size="30" />
           </button>
           <Link
-            href={`/booking?title=${buildingName}&roomTitle=${room.title}&roomPrice=${room.price}&roomId=${roomId}&numPeople=${numPeople}&minPeople=${room.minPeople}&maxPeople=${room.maxPeople}&checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`}
+            href={`/booking?items=[{accommodationTitle:${buildingName},roomTitle:${room.title},roomPrice:${room.price},numPeople:${numPeople},minPeople:${room.minPeople},maxPeople:${room.maxPeople},checkInDatetime:${`${checkInDate}T${checkInTime}`},checkOutDatetime:${checkOutDate}T${checkOutTime}, roomId:${roomId}}]`}
           >
             <button
               type="button"

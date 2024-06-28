@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { ISignUp } from '../../app/(auth)/signup/page';
 
-const BASE_URL = 'https://test.quickbank.co.kr:8443';
+export const BASE_URL = 'https://api.ananbada.store';
 
 const requireAccessKey = (email: string) => {
   const accessKeyURL = `${BASE_URL}/api/register/email`;
