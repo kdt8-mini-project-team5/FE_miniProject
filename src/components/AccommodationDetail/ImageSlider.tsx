@@ -14,8 +14,8 @@ function ImageSlider({ imgArr }: { imgArr: string[] | undefined }) {
       autoplay={{ delay: 10000 }}
       className="w-full h-full"
     >
-      {imgArr?.map((url, index) => (
-        <SwiperSlide key={index} className="py-10">
+      {imgArr?.map((url) => (
+        <SwiperSlide className="py-10">
           <Image
             src={url}
             alt="accommodation image"

@@ -12,7 +12,6 @@ function MswComponent({ children }: { children: React.ReactNode }) {
         (async () => {
           const { worker } = await import('@/mocks/browser');
           await worker.start();
-          console.log('Worker started');
           setIsMocking(true);
         })();
       }
