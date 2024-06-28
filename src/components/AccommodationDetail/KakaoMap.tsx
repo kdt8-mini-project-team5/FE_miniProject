@@ -26,9 +26,7 @@ function Kakaomap({ data }: { data: IAccommodation }) {
           level: 3,
         };
         const bounds = new window.kakao.maps.LatLngBounds();
-
         const map = new window.kakao.maps.Map(container, options);
-
         const marker = new window.kakao.maps.Marker({
           position: location,
         });
@@ -40,7 +38,7 @@ function Kakaomap({ data }: { data: IAccommodation }) {
 
     kakaoMapScript.addEventListener('load', onLoadKakaoAPI);
   }, [data?.latitude, data?.longitude]);
-  return <div id="map" className="w-full h-[400px]" />;
+  return <div id="map" className="w-[550px] h-[400px]" />;
 }
 
 export default Kakaomap;

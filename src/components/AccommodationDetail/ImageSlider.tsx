@@ -19,7 +19,7 @@ function ImageSlider({ imgArr }: { imgArr: string[] | undefined }) {
           <Image
             src={url}
             alt="accommodation image"
-            layout="fill"
+            fill
             objectFit="cover"
             className="rounded-xl"
           />

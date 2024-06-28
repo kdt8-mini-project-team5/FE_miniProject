@@ -1,5 +1,6 @@
 import { IAccommodation } from '@/app/(main)/[id]/page';
 import axios, { AxiosResponse } from 'axios';
+import { BASE_URL } from '../SignUp/signUpAxios';
 
 interface INeedData {
   params: { id: string };
@@ -12,7 +13,7 @@ const accommodationDataFetch = async ({
   checkInDate,
   checkOutDate,
 }: INeedData): Promise<AxiosResponse<IAccommodation>> => {
-  const URL = `api/accommodation/${params.id}?checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`;
+  const URL = `${BASE_URL}/api/accommodation/${params.id}?checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`;
   // const URL = '/api/accommodation';
   // const URL = `http://121.189.180.62:8080/api/accommodation/${params.id}?checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`;
   try {
