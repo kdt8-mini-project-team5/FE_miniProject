@@ -36,8 +36,6 @@ const fetchProjects = async ({
       ...(id && { cursorId: id }),
     },
   });
-
-  console.log('pageParam', pageParam, res.data, 'category', fetchedCategory);
   return res.data;
 };
 
@@ -93,8 +91,6 @@ const AccommodationList = ({ category }: AccommodationListProps) => {
       setIsRestoring(false);
     }
   }, [isRestoring, isLoading, category]);
-
-  console.log(data);
 
   return (
     <section className="mt-16">

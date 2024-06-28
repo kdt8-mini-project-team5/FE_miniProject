@@ -15,7 +15,6 @@ function Login() {
   const {
     register,
     formState: { errors },
-    handleSubmit,
   } = useForm<ILogin>({
     resolver: zodResolver(loginSchema),
   });
@@ -44,9 +43,6 @@ function Login() {
           <div className="flex flex-col gap-5">
             <button
               type="submit"
-              onClick={handleSubmit((e) => {
-                console.log(e);
-              })}
               className="bg-primary text-white text-2xl rounded-xl h-16"
             >
               로그인

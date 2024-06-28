@@ -1,6 +1,6 @@
 import { IAccommodation } from '@/app/(main)/[id]/page';
+import BASE_URL from '@/lib/constants';
 import axios, { AxiosResponse } from 'axios';
-import { BASE_URL } from '../SignUp/signUpAxios';
 
 interface INeedData {
   params: { id: string };

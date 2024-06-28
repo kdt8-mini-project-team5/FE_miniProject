@@ -1,10 +1,9 @@
 import axios from 'axios';
+import BASE_URL from '@/lib/constants';
 import { ISignUp } from '../../app/(auth)/signup/page';
 
-export const BASE_URL = 'https://api.ananbada.store';
-
 const requireAccessKey = (email: string) => {
-  const accessKeyURL = `${BASE_URL}/api/register/email`;
+  const accessKeyURL = `${BASE_URL}api/register/email`;
   const dataToJson = JSON.stringify({ email });
   try {
     axios.post(accessKeyURL, dataToJson, {
