@@ -61,13 +61,13 @@ function Page() {
         >
           {images.map((image) => (
             <SwiperSlide key={image.id}>
-              <div className="relative w-90 h-44">
+              <div className="relative w-full h-40">
                 <Image
                   src={image.src}
                   alt="event image"
                   fill
                   style={{ objectFit: 'cover' }}
-                  className="rounded-lg cursor-pointer"
+                  className="rounded-xl cursor-pointer"
                   sizes="50vw"
                 />
               </div>
