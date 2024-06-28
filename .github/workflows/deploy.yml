@@ -24,8 +24,8 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.AUTO_ACTION }}
         with:
           source-directory: 'output'
-          destination-github-username: [BaDook2]
-          destination-repository-name: [FE_miniProject]
+          destination-github-username: 'BaDook2'
+          destination-repository-name: 'FE_miniProject'
           user-email: ${{ secrets.EMAIL }}
           commit-message: ${{ github.event.commits[0].message }}
           target-branch: main
