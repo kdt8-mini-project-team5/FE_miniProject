@@ -127,7 +127,7 @@ const AccommodationList = ({ category }: AccommodationListProps) => {
                   원 ~
                 </div>
                 <Link
-                  href={`/reservation/${item.id}`}
+                  href={`/${item.id}`}
                   className="my-3 block w-full py-2 bg-primary text-white text-center rounded-md"
                   onClick={() => {
                     sessionStorage.setItem(
