@@ -31,7 +31,7 @@ const axiosPost = async <T>(
       },
     }),
   );
-  return response.data;
+  return response;
 };
 
 const axiosGet = async <T>(url: string): Promise<FetchResponse<T>> => {

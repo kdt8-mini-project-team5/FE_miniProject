@@ -24,7 +24,7 @@ function CartAddButton({ roomId, checkInDate, checkOutDate }: ICartAdd) {
   };
   const { incrementCartCount } = useCartStore();
   const handleClick = async () => {
-    const { _, error } = await cartAdd({
+    const { error } = await cartAdd({
       roomId,
       checkInDate,
       checkOutDate,
