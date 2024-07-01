@@ -53,7 +53,7 @@ function AccommodationDetail({ params }: { params: { id: string } }) {
   const [peopleCount, setPeopleCount] = useState<string>('1');
   const [checkInDate, setCheckInDate] = useState<string>(todayToDate);
   const [checkOutDate, setCheckOutDate] = useState<string>(tommorrowToDate);
-  // 비동기 함수 정의
+
   const fetchData = useCallback(async (): Promise<void> => {
     const response = await accommodationDataFetch({
       params,
