@@ -2,7 +2,6 @@ import { IRoom } from '@/app/(main)/[id]/page';
 import Link from 'next/link';
 import ImageSlider from './ImageSlider';
 import CartAddButton from './CartAddButton';
-import ReserveButton from './ReserveButton';
 
 interface RoomProps {
   buildingName: string;
@@ -12,6 +11,7 @@ interface RoomProps {
   checkOutTime: string;
   checkInDate: string;
   checkOutDate: string;
+  isVaildPeriod: boolean;
 }
 
 function Room({
@@ -22,6 +22,7 @@ function Room({
   numPeople,
   checkInTime,
   checkOutTime,
+  isVaildPeriod,
 }: RoomProps) {
   const bookingItem = {
     accommodationTitle: buildingName,
@@ -49,14 +50,30 @@ function Room({
           {room.price}원
         </span>
         <div className="flex justify-end items-center gap-2">
-          <CartAddButton
-            roomId={room.roomId}
-            checkInDate={`${checkInDate}`}
-            checkOutDate={`${checkOutDate}`}
-          />
-          <Link href={`/booking?items=[${encodedItems}]`}>
-            <ReserveButton text="예약하기" />
-          </Link>
+          {isVaildPeriod ? (
+            <CartAddButton
+              roomId={room.roomId}
+              checkInDate={`${checkInDate}`}
+              checkOutDate={`${checkOutDate}`}
+            />
+          ) : null}
+
+          {isVaildPeriod ? (
+            <Link
+              href={`/booking?items=[{accommodationTitle:${buildingName},roomTitle:${room.title},roomPrice:${room.price},numPeople:${numPeople},minPeople:${room.minPeople},maxPeople:${room.maxPeople},checkInDatetime:${`${checkInDate}T${checkInTime}`},checkOutDatetime:${checkOutDate}T${checkOutTime}, roomId:${room.roomId}}]`}
+            >
+              <button
+                type="button"
+                className="bg-primary text-white w-[130px] h-[45px] rounded-xl text-lg"
+              >
+                예약하기
+              </button>
+            </Link>
+          ) : (
+            <div className="bg-primary opacity-40 text-white w-[130px] h-[45px] rounded-xl text-lg flex justify-center items-center cursor-not-allowed">
+              예약하기
+            </div>
+          )}
         </div>
       </div>
     </div>
