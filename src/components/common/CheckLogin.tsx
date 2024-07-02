@@ -3,6 +3,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { RxCross2 } from 'react-icons/rx';
 import BASE_URL from '../../lib/constants';
 import { axiosGet } from '../../lib/fetchURL';
+import BackButton from './BackButton';
 
 const CheckLogin = () => {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -49,6 +50,7 @@ const CheckLogin = () => {
       >
         로그인 페이지로 가기
       </button>
+      <BackButton />
       <button type="button" aria-label="close" onClick={closeModal}>
         <RxCross2 className="absolute top-0 right-2 cursor-pointer size-11" />
       </button>
