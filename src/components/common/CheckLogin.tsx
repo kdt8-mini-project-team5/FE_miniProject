@@ -3,7 +3,6 @@ import { usePathname, useRouter } from 'next/navigation';
 import { RxCross2 } from 'react-icons/rx';
 import BASE_URL from '../../lib/constants';
 import { axiosGet } from '../../lib/fetchURL';
-import BackButton from './BackButton';
 
 const CheckLogin = () => {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -31,31 +30,29 @@ const CheckLogin = () => {
         setErr(error);
       }
     };
-    // 로그인 및 회원가입 페이지는 검사하지 않음
     if (!noCheckPageArr.includes(path)) {
       checkLogin();
     }
   }, [path]);
 
-  return (
+  return err ? (
     <dialog
       ref={dialogRef}
-      className="w-1/2 h-1/2 rounded-xl flex flex-col gap-10 justify-center items-center fixed mt-[50%]"
+      className="w-1/2 h-1/2 rounded-xl flex flex-col gap-10 justify-center items-center fixed"
     >
       <h3 className="text-2xl font-bold">{err}</h3>
       <button
         type="button"
-        className="h-20 bg-primary text-white rounded-2xl"
+        className="h-16 bg-primary text-white rounded-2xl"
         onClick={() => router.push('/login')}
       >
-        로그인 페이지로 가기
+        로그인 페이지로 이동
       </button>
-      <BackButton />
       <button type="button" aria-label="close" onClick={closeModal}>
         <RxCross2 className="absolute top-0 right-2 cursor-pointer size-11" />
       </button>
     </dialog>
-  );
+  ) : null;
 };
 
 export default CheckLogin;
