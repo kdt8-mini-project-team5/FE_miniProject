@@ -156,8 +156,8 @@ function BookingItem({
           </div>
           <p className="text-xs mb-2 text-dovegray">{`기준 ${booking.minPeople}명 / 최대 ${booking.maxPeople}명`}</p>
           {(type === 'bookingResult' || type === 'bookingList') &&
-            'name' in booking && (
-              <p className="text-end text-xs mb-2 text-dovegray">{`${booking.name} / ${booking.phoneNumber}`}</p>
+            'guestName' in booking && (
+              <p className="text-end text-xs mb-2 text-dovegray">{`${booking.guestName} / ${booking.guestTel}`}</p>
             )}
         </article>
       </section>
