@@ -49,7 +49,12 @@ function BookingItem({
   };
 
   const handleTitleClick = () => {
-    if (type === 'cart' && 'cartId' in booking && onAccommodationTitleClick) {
+    if (
+      type === 'cart' &&
+      'cartId' in booking &&
+      'accommodationId' in booking &&
+      onAccommodationTitleClick
+    ) {
       onAccommodationTitleClick(booking.accommodationId);
     }
   };
@@ -86,7 +91,7 @@ function BookingItem({
             {booking.accommodationTitle}
           </h2>
           {type === 'cart' &&
-            'cartId' in booking &&
+            'isBooking' in booking &&
             booking.isBooking === false && (
               <p className=" text-red-600">예약불가상품</p>
             )}
@@ -95,7 +100,7 @@ function BookingItem({
         <p
           className={`text-lg mb-2 font-bold ${
             type === 'cart' &&
-            'cartId' in booking &&
+            'isBooking' in booking &&
             booking.isBooking === false
               ? 'text-alto'
               : ''
@@ -130,7 +135,7 @@ function BookingItem({
               <p
                 className={`text-xl font-bold ${
                   type === 'cart' &&
-                  'cartId' in booking &&
+                  'isBooking' in booking &&
                   booking.isBooking === false
                     ? 'text-alto'
                     : ''
@@ -143,7 +148,7 @@ function BookingItem({
               <p
                 className={`text-xl font-bold ${
                   type === 'cart' &&
-                  'cartId' in booking &&
+                  'isBooking' in booking &&
                   booking.isBooking === false
                     ? 'text-alto'
                     : ''
@@ -167,7 +172,7 @@ function BookingItem({
         <p
           className={`text-lg font-bold ${
             type === 'cart' &&
-            'cartId' in booking &&
+            'isBooking' in booking &&
             booking.isBooking === false
               ? 'line-through text-alto'
               : 'text-mineshaft'
