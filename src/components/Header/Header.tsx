@@ -4,20 +4,36 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useCallback, useEffect } from 'react';
 import { MdOutlineShoppingCart } from 'react-icons/md';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import useCartStore, { useIsLoggedIn } from '@/lib/store';
+import { AUTH_PATH, PROTECTED_PATH } from '@/lib/constants';
 import fetchCartCount from './fetchCartCount';
 import fetchLogOut from './fetchLogOut';
 
 const Header = () => {
-  const pathname = usePathname();
+  const presentPath = usePathname();
   const { cartCount, setCartCount } = useCartStore();
   const { isLoggedIn, setLogOut } = useIsLoggedIn();
+  const router = useRouter();
 
-  const fetchData = useCallback(async (): Promise<void> => {
+  const fetchCart = useCallback(async (): Promise<void> => {
     const count = await fetchCartCount();
     setCartCount(count);
   }, [setCartCount]);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      fetchCart();
+      if (AUTH_PATH.some((path) => presentPath.startsWith(path)))
+        router.push('/');
+    } else if (
+      !isLoggedIn &&
+      PROTECTED_PATH.some((path) => presentPath.startsWith(path))
+    ) {
+      router.push('/login');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLoggedIn, presentPath]);
 
   const clickLogOut = async () => {
     const statusCode = await fetchLogOut();
@@ -26,12 +42,6 @@ const Header = () => {
       setCartCount(0);
     }
   };
-
-  useEffect(() => {
-    if (isLoggedIn) {
-      fetchData();
-    }
-  }, [isLoggedIn, fetchData]);
 
   return (
     <div className="flex items-center h-full w-full justify-between">
@@ -42,13 +52,13 @@ const Header = () => {
       <div className="flex items-center h-full gap-7 font-bold">
         <Link
           href="/"
-          className={`text-lg ${pathname === '/' ? 'text-primary' : ''}`}
+          className={`text-lg ${presentPath === '/' ? 'text-primary' : ''}`}
         >
           메인페이지
         </Link>
         <Link
           href={isLoggedIn ? '/bookingList' : '/login'}
-          className={`text-lg ${pathname === '/bookingList' ? 'text-primary' : ''}`}
+          className={`text-lg ${presentPath === '/bookingList' ? 'text-primary' : ''}`}
         >
           예약내역
         </Link>
