@@ -62,7 +62,6 @@ export default function RootLayout({
                 rtl={false}
                 pauseOnFocusLoss={false}
                 pauseOnHover
-                style={{}}
               />
             </div>
           </MswComponent>
